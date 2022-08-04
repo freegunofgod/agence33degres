@@ -1,0 +1,22 @@
+<div class="team_container flex-row-1 flex-c-gap-30 flex-r-gap-30 flex-wrap">
+    <?php 
+    foreach($team as $element){
+        $i++;
+        echo('<div class="animation-container">
+                <div class="member relative cardT">
+                    <div class="team_container_member face" data-aos="flip-up" data-aos-delay="'. $i*100 . '" data-aos-duration="1000">
+                        <img class="team_container_member_img" src="' . $element['image']['url'] . '" alt="' . $element['image']['alt'] . '">
+                        <div class="team_container_member_content ">
+                            <h3 class="white">' . $element['nom'] . '</h3>
+                        </div>
+                    </div>
+                    <div class="team_container_member-2 back">
+                        <img class="team_container_member_img-2" src="' . $element['image']['url'] . '" alt="' . $element['image']['alt'] . '">
+                        <div class="team_container_member_content-2 ">
+                            <p>' . $element['metier'] . '</p>
+                        </div>
+                    </div>
+                </div>
+            </div>');
+    }?>
+</div>
