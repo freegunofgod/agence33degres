@@ -1,0 +1,98 @@
+.team{
+        .title-container.relative > *{
+            display: inline-block;
+            margin-right: 15px;
+            @media (max-width: $lg){
+                display: block;
+            }
+        }
+        &_container{
+            .animation-container {
+                width: 400px;
+                @media (max-width: $lg){
+                    width: 350px;
+                }
+            }
+            .cardT{
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                transform-style: preserve-3d;
+                transition: transform 1s;       
+            }
+            perspective: 600px;
+            &_member{ 
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                column-gap: 15px;
+                width: 100%;
+                height: 200px;
+                max-width: 400px;
+                border-radius: 100px;
+                background-color: rgb(249, 249, 249, 0.20);
+                border: 10px solid rgb(249,249,249, 0);
+                @media (max-width: $xxl) and (min-width: $lg){
+                    width: 30%;
+                }
+                .team_container_member_img{
+                    background: white;
+                    border-radius: 100px;
+                    height: 100%;
+                    width: auto;
+                }
+                .team_container_member_content{
+                    margin-right: 50px;
+                    h3.white {
+                        font-size: 15px;
+                        margin: 0;
+                        @media screen and (min-width: $lg) {
+                            font-size: 24px;
+                        }
+                    }
+                    span.content > p{
+                        font-size: 12px;
+                        margin: 0;
+                        @media screen and (min-width: $lg) {
+                            font-size: 18px;
+                        }
+                    }
+                }  
+            }
+            &_member-2{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 200px;
+                max-width: 400px;
+                min-height: 110px;
+                border-radius: 100px;
+                background-color: rgb(249, 249, 249, 0.8);
+                border: 10px solid rgb(249,249,249, 0);
+                @media (max-width: $xxl) and (min-width: $lg){
+                    width: 30%;
+                }
+                .team_container_member_img-2{
+                    background: white;
+                    border-radius: 100px;
+                    height: 100%;
+                    width: auto;
+                }
+                .team_container_member_content-2{
+                    margin-left: 50px;
+                    h3.white {
+                        font-size: 15px;
+                        margin: 0;
+                        @media screen and (min-width: $lg) {
+                            font-size: 24px;
+                        }
+                    }
+                    p{
+                        margin: 0;
+                    }
+                }  
+            }
+        }
+    }
